@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #4C4246;
+}
+
+.hello {
+    padding-top: 3%;
+    padding-bottom: 1%;
+    transition: transform .2s;
+}
+
+.is-ancestor {
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    
+}
+.card {
+    width: 20vw;
+}
+.is-child {
+    transition: transform .15s;
+    background: #41393C;
+    border: whitesmoke;
+    border-style: groove;
+    border-radius: 3%;
+    border-width: 1px;
+}
+.is-child:hover {
+    transform: scale(1.08); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    background: #9d4edd; 
+  }
+
+.is-child:hover .title1 {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    color: #f8f9fa; 
+  }
+
+.hello:hover {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    color: #9d4edd;
+    font-weight: bolder;
+  } 

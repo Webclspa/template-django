@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Inicio | Bienvenidos{%endblock %}
+{% block content %}
+<h1 class="title hello has-text-centered">Digital Art Gallery!</h1>
+
+
+<div class="tile is-ancestor">
+    {% for obj in illustration %}
+     <div class="tile is-parent is-3">
+        <div class="tile is-child box">
+          <a href="">
+            <p class="title has-text-white title1 has-text-centered is-4">{{ obj.title }}</p>
+          <figure class="image is-4by3">
+            <img src="{{ obj.image.url }}">
+          </figure>
+          
+          
+          
+          
+          <p class="content has-text-white title1 has-text-centered">{{ obj.description}}</p>
+        </a>
+        </div>
+      </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
